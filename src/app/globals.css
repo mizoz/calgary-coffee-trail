@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-playfair: 'Playfair Display', serif;
+    --font-inter: 'Inter', system-ui, sans-serif;
+  }
+
+  body {
+    @apply font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .coffee-gradient {
+    @apply bg-gradient-to-br from-coffee-100 via-coffee-50 to-yyc-sunrise/10;
+  }
+
+  .glass {
+    @apply bg-white/80 dark:bg-yyc-sky/80 backdrop-blur-md;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Leaflet custom styles */
+.leaflet-container {
+  font-family: var(--font-inter);
+}
+
+.coffee-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  border-radius: 12px !important;
+}
+
+.dark .leaflet-popup-content-wrapper {
+  background: #1e3a5f !important;
+  color: #f9ede0 !important;
+}
+
+.dark .leaflet-popup-tip {
+  background: #1e3a5f !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-coffee-100 dark:bg-yyc-mountain/30;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-coffee-300 dark:bg-yyc-mountain rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-coffee-400 dark:bg-coffee-600;
+}
+
+/* Selection */
+::selection {
+  @apply bg-coffee-300 dark:bg-coffee-600 text-coffee-900 dark:text-coffee-100;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes steam {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-8px) scale(1.1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-16px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.animate-steam {
+  animation: steam 2s ease-out infinite;
+}

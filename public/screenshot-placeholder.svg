@@ -1,0 +1,62 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#fdf8f3"/>
+  
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdf8f3"/>
+      <stop offset="50%" style="stop-color:#f9ede0"/>
+      <stop offset="100%" style="stop-color:#f4a460;stop-opacity:0.2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Coffee cup icon -->
+  <g transform="translate(540, 180)">
+    <path d="M60 20h10a30 30 0 1 1 0 60h-10" stroke="#6c3c2a" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M10 20h60v50a20 20 0 0 1-20 20h-20a20 20 0 0 1-20-20v-50z" fill="#6c3c2a"/>
+    <line x1="25" y1="-5" x2="25" y2="5" stroke="#6c3c2a" stroke-width="4" stroke-linecap="round"/>
+    <line x1="40" y1="-8" x2="40" y2="2" stroke="#6c3c2a" stroke-width="4" stroke-linecap="round"/>
+    <line x1="55" y1="-5" x2="55" y2="5" stroke="#6c3c2a" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="320" text-anchor="middle" font-family="Georgia, serif" font-size="56" font-weight="bold" fill="#3a1d14">YYC Coffee Trail</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="370" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" fill="#d2844f">Discover Calgary's Best Coffee Shops</text>
+  
+  <!-- Stats -->
+  <g transform="translate(350, 450)">
+    <text x="0" y="0" text-anchor="middle" font-family="system-ui, sans-serif" font-size="32" font-weight="bold" fill="#6c3c2a">25+</text>
+    <text x="0" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#854730">Coffee Shops</text>
+  </g>
+  <g transform="translate(500, 450)">
+    <text x="0" y="0" text-anchor="middle" font-family="system-ui, sans-serif" font-size="32" font-weight="bold" fill="#6c3c2a">15</text>
+    <text x="0" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#854730">Neighborhoods</text>
+  </g>
+  <g transform="translate(650, 450)">
+    <text x="0" y="0" text-anchor="middle" font-family="system-ui, sans-serif" font-size="32" font-weight="bold" fill="#6c3c2a">4.5★</text>
+    <text x="0" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#854730">Avg Rating</text>
+  </g>
+  <g transform="translate(800, 450)">
+    <text x="0" y="0" text-anchor="middle" font-family="system-ui, sans-serif" font-size="32" font-weight="bold" fill="#6c3c2a">🌙</text>
+    <text x="0" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#854730">Dark Mode</text>
+  </g>
+  
+  <!-- Calgary skyline silhouette -->
+  <g fill="#d2844f" opacity="0.3">
+    <rect x="0" y="600" width="1200" height="30"/>
+    <rect x="100" y="580" width="30" height="20"/>
+    <rect x="200" y="560" width="40" height="40"/>
+    <rect x="300" y="570" width="25" height="30"/>
+    <rect x="400" y="540" width="60" height="60"/>
+    <rect x="520" y="560" width="30" height="40"/>
+    <rect x="600" y="550" width="50" height="50"/>
+    <rect x="700" y="570" width="35" height="30"/>
+    <rect x="800" y="530" width="80" height="70"/>
+    <rect x="920" y="560" width="40" height="40"/>
+    <rect x="1000" y="580" width="30" height="20"/>
+    <rect x="1100" y="570" width="25" height="30"/>
+  </g>
+</svg>
