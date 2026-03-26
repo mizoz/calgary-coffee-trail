@@ -7,7 +7,7 @@
 
 Discover Calgary's vibrant coffee scene, one cup at a time. 🫘
 
-![YYC Coffee Trail Screenshot](./public/screenshot-placeholder.png)
+![YYC Coffee Trail Screenshot](./public/screenshot-placeholder.svg)
 
 ## ✨ Features
 
