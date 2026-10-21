@@ -15,6 +15,9 @@ export default function Footer() {
             <p className="text-sm text-coffee-400">
               Discover Calgary&apos;s vibrant coffee scene, one cup at a time.
             </p>
+            <p className="text-xs text-coffee-500">
+              Shop listings are sample data. Hours, ratings and review counts are illustrative, so check with each cafe before visiting.
+            </p>
           </div>
 
           {/* Links */}
@@ -49,7 +52,7 @@ export default function Footer() {
           <div className="flex items-center gap-4 text-sm text-coffee-500">
             <span>© {new Date().getFullYear()} YYC Coffee Trail</span>
             <a 
-              href="https://github.com/mizoz/yyc-coffee-trail"
+              href="https://github.com/mizoz/calgary-coffee-trail"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-coffee-300 transition-colors"

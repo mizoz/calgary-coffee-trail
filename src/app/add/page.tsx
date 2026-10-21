@@ -83,7 +83,6 @@ export default function AddShopPage() {
     
     if (validate()) {
       // In a real app, this would send data to an API
-      console.log('Submitting shop:', formData);
       setSubmitted(true);
     }
   };
@@ -117,11 +116,11 @@ export default function AddShopPage() {
           <div className="bg-white dark:bg-yyc-sky/30 rounded-2xl p-12 shadow-lg">
             <CheckCircle className="w-20 h-20 text-green-500 mx-auto mb-6" />
             <h1 className="font-display text-3xl font-bold text-coffee-800 dark:text-coffee-100 mb-4">
-              Submission Received!
+              Thanks!
             </h1>
             <p className="text-lg text-coffee-600 dark:text-coffee-300 mb-8">
-              Thank you for adding <strong>{formData.name}</strong> to the YYC Coffee Trail. 
-              We&apos;ll review your submission and add it to the map soon.
+              Thanks for suggesting <strong>{formData.name}</strong>. This is a demo form,
+              so nothing was sent or saved.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

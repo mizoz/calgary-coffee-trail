@@ -1,132 +1,61 @@
-# YYC Coffee Trail
+# Calgary Coffee Trail
 
-[![Next.js](https://img.shields.io/badge/Next.js-14.2-black?logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+**YYC Coffee Trail** is a Next.js app for exploring Calgary coffee shops on an interactive map, with search, filters and a page for each cafe.
 
-Discover Calgary's vibrant coffee scene, one cup at a time. 🫘
+![YYC Coffee Trail screenshot](./public/screenshot.png)
 
-## 📸 Screenshot
+> **Sample data:** The cafe list in `src/data/coffee-shops.ts` is demo data. Shop names and neighbourhoods refer to real Calgary cafes, but hours, ratings, review counts, features, addresses and coordinates are illustrative and may be wrong or out of date. They are not real reviews. Always check with the cafe before you go.
 
-![YYC Coffee Trail Screenshot](./public/screenshot.png)
+## Why
 
-## ✨ Features
+A small, map-first way to browse Calgary's coffee scene by neighbourhood and amenities, built as a project to practise the Next.js App Router, React context and Leaflet maps.
 
-- 🗺️ **Interactive Map** - Explore coffee shops across Calgary with an interactive Leaflet map
-- 🔍 **Search & Filter** - Find cafes by name, neighborhood, or features (patio, wifi, parking)
-- ⭐ **Ratings & Reviews** - See ratings and review counts for each shop
-- 📱 **Mobile Responsive** - Beautiful experience on any device
-- 🌙 **Dark Mode** - Easy on the eyes with automatic theme detection
-- 📍 **Real Data** - Pre-populated with 25+ real Calgary coffee shops
-- ➕ **Add Shops** - Submit new coffee shops to grow the community
+## Features
 
-## 🏃 Quick Start
+- **Interactive map** with Leaflet / React-Leaflet and CARTO tiles. Markers open a short popup for each shop.
+- **Search and filters** by name, neighbourhood, "open now" (based on the sample hours), patio and Wi-Fi.
+- **Shop detail pages** with hours, amenities, a directions link and nearby cafes.
+- **"Add a shop" form** with client-side validation. It is a demo: nothing is sent or saved.
+- **Dark mode** that follows the system setting and can be toggled.
+- Responsive layout built with Tailwind CSS.
+
+## Quick start
+
+Requires Node.js 18.17 or later.
 
 ```bash
-# Clone the repository
-git clone https://github.com/mizoz/yyc-coffee-trail.git
-cd yyc-coffee-trail
-
-# Install dependencies
-npm install
-
-# Run development server
+git clone https://github.com/mizoz/calgary-coffee-trail.git
+cd calgary-coffee-trail
+npm ci
 npm run dev
-
-# Open http://localhost:3000
 ```
 
-## 🏗️ Build
+Open http://localhost:3000.
+
+Production build:
 
 ```bash
-# Build for production
 npm run build
-
-# Start production server
 npm start
 ```
 
-The app is configured for static export (`output: 'export'`). The built files will be in the `out/` directory.
-
-## 📁 Project Structure
+## Project structure
 
 ```
-yyc-coffee-trail/
-├── src/
-│   ├── app/                 # Next.js App Router pages
-│   │   ├── page.tsx         # Home page with map
-│   │   ├── layout.tsx       # Root layout
-│   │   ├── shops/
-│   │   │   ├── page.tsx     # All shops list
-│   │   │   └── [id]/
-│   │   │       └── page.tsx # Individual shop detail
-│   │   └── add/
-│   │       └── page.tsx     # Add shop form
-│   ├── components/          # React components
-│   │   ├── Header.tsx
-│   │   ├── Footer.tsx
-│   │   ├── FilterBar.tsx
-│   │   ├── CoffeeShopCard.tsx
-│   │   ├── CoffeeShopMap.tsx
-│   │   ├── LeafletMap.tsx
-│   │   └── StarRating.tsx
-│   ├── context/             # React contexts
-│   │   ├── ThemeContext.tsx
-│   │   └── FilterContext.tsx
-│   ├── data/
-│   │   └── coffee-shops.ts  # Coffee shop data
-│   └── types/
-│       └── index.ts         # TypeScript types
-├── public/                  # Static assets
-├── tailwind.config.ts
-├── next.config.js
-└── package.json
+src/
+├── app/            # Pages: map home, /shops, /shops/[id], /add
+├── components/     # Header, Footer, FilterBar, CoffeeShopCard, map components, StarRating
+├── context/        # Theme and filter state (React context)
+├── data/           # Sample coffee shop data and open-now helper
+└── types/          # TypeScript types
 ```
 
-## 🎨 Tech Stack
+## Tech stack
 
-- **Framework:** [Next.js 14](https://nextjs.org/) with App Router
-- **Language:** [TypeScript](https://www.typescriptlang.org/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Maps:** [Leaflet](https://leafletjs.com/) + [React-Leaflet](https://react-leaflet.js.org/)
-- **Icons:** [Lucide React](https://lucide.dev/)
-- **Fonts:** [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) + [Inter](https://fonts.google.com/specimen/Inter)
+Next.js 14 (App Router), React 18, TypeScript, Tailwind CSS 3, Leaflet + React-Leaflet, Lucide icons.
 
-## ☕ Featured Coffee Shops
+## License
 
-The app comes pre-populated with 25+ real Calgary coffee shops including:
+MIT © 2026 Ahmed Mahmoud. See [LICENSE](LICENSE).
 
-- **Monogram Coffee** - Downtown specialty roaster
-- **Rosso Coffee Roasters** - Kensington with river views
-- **Phil & Sebastian** - Pioneering Calgary roasters
-- **Heritage Coffee Roasters** - Old-world charm in Mission
-- **Regal Cat Coffee** - Cat-themed Beltline spot
-- **Bumpy's Cafe** - Calgary institution since 1989
-- **Higher Ground Cafe** - Cozy Kensington favorite
-- **Vice Coffee** - Modern East Village bar
-- And many more...
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Calgary's amazing coffee community
-- All the local roasters and cafe owners making YYC's coffee scene special
-- [OpenStreetMap](https://www.openstreetmap.org/) and [CARTO](https://carto.com/) for map tiles
-
----
-
-Made with ☕ and ❤️ in Calgary, Alberta | YYC
+Map data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, tiles by [CARTO](https://carto.com/attributions).

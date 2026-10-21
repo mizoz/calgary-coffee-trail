@@ -1,5 +1,8 @@
 import { CoffeeShop } from '@/types';
 
+// Sample data for demonstration. Shop names and neighbourhoods refer to real
+// Calgary cafes, but hours, ratings, review counts, features, addresses and
+// coordinates are illustrative and may be wrong or out of date.
 export const coffeeShops: CoffeeShop[] = [
   {
     id: 'monogram-downtown',
@@ -20,8 +23,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.8,
     reviewCount: 847,
     features: { patio: false, wifi: true, parking: false, veganOptions: true, pastrySelection: true },
-    instagram: '@monogramcoffee',
-    website: 'https://monogramcoffee.com',
   },
   {
     id: 'rosso-17th',
@@ -42,8 +43,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.7,
     reviewCount: 1203,
     features: { patio: true, wifi: true, parking: true, veganOptions: true, pastrySelection: true },
-    instagram: '@rossocoffeeroasters',
-    website: 'https://rossocoffee.ca',
   },
   {
     id: 'phil-sebastion-mosaic',
@@ -64,8 +63,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.8,
     reviewCount: 956,
     features: { patio: true, wifi: true, parking: true, veganOptions: true, pastrySelection: true },
-    instagram: '@philandsebastian',
-    website: 'https://philsebastian.com',
   },
   {
     id: 'heritage-roasters',
@@ -86,8 +83,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.6,
     reviewCount: 412,
     features: { patio: true, wifi: true, parking: false, veganOptions: false, pastrySelection: true },
-    instagram: '@heritagecoffeeroasters',
-    website: 'https://heritagecoffee.ca',
   },
   {
     id: 'regal-cat',
@@ -108,8 +103,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.5,
     reviewCount: 534,
     features: { patio: false, wifi: true, parking: false, veganOptions: true, pastrySelection: true },
-    instagram: '@regalcatcoffee',
-    website: 'https://regalcat.coffee',
   },
   {
     id: 'bumpys',
@@ -130,7 +123,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.4,
     reviewCount: 1087,
     features: { patio: true, wifi: false, parking: false, veganOptions: false, pastrySelection: true },
-    instagram: '@bumpyscafe',
   },
   {
     id: 'higher-ground',
@@ -151,7 +143,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.3,
     reviewCount: 623,
     features: { patio: true, wifi: true, parking: true, veganOptions: true, pastrySelection: true },
-    website: 'https://highergroundcafe.ca',
   },
   {
     id: 'deacons',
@@ -172,7 +163,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.6,
     reviewCount: 289,
     features: { patio: true, wifi: true, parking: true, veganOptions: true, pastrySelection: true },
-    instagram: '@deaconscoffee',
   },
   {
     id: 'cassios-inglewood',
@@ -193,7 +183,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.5,
     reviewCount: 412,
     features: { patio: true, wifi: true, parking: true, veganOptions: true, pastrySelection: true },
-    instagram: '@cassioscoffee',
   },
   {
     id: 'vice-east-village',
@@ -214,7 +203,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.6,
     reviewCount: 367,
     features: { patio: true, wifi: true, parking: false, veganOptions: true, pastrySelection: true },
-    instagram: '@vicecoffee',
   },
   {
     id: 'sitew-coffee',
@@ -235,7 +223,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.7,
     reviewCount: 198,
     features: { patio: false, wifi: true, parking: false, veganOptions: true, pastrySelection: false },
-    instagram: '@site2coffee',
   },
   {
     id: 'calf-roasters',
@@ -256,7 +243,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.5,
     reviewCount: 256,
     features: { patio: true, wifi: true, parking: false, veganOptions: true, pastrySelection: true },
-    instagram: '@calfroasters',
   },
   {
     id: 'good-trade',
@@ -277,7 +263,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.6,
     reviewCount: 389,
     features: { patio: true, wifi: true, parking: true, veganOptions: true, pastrySelection: true },
-    website: 'https://goodtradecoffee.ca',
   },
   {
     id: 'crowsnest-coffee',
@@ -318,7 +303,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.3,
     reviewCount: 567,
     features: { patio: true, wifi: false, parking: true, veganOptions: true, pastrySelection: true },
-    instagram: '@bluestardiner',
   },
   {
     id: 'clives',
@@ -339,7 +323,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.2,
     reviewCount: 423,
     features: { patio: false, wifi: false, parking: false, veganOptions: false, pastrySelection: false },
-    instagram: '@clivesclassiccone',
   },
   {
     id: 'kawa-espresso',
@@ -380,7 +363,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.3,
     reviewCount: 234,
     features: { patio: true, wifi: true, parking: false, veganOptions: true, pastrySelection: true },
-    instagram: '@elephantpantscoffee',
   },
   {
     id: 'sherman-coffee',
@@ -441,7 +423,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.5,
     reviewCount: 278,
     features: { patio: true, wifi: true, parking: false, veganOptions: true, pastrySelection: true },
-    instagram: '@chinupcoffee',
   },
   {
     id: 'cadence',
@@ -462,7 +443,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.6,
     reviewCount: 198,
     features: { patio: true, wifi: true, parking: true, veganOptions: true, pastrySelection: true },
-    instagram: '@cadencecoffee',
   },
   {
     id: 'neat-coffee',
@@ -483,7 +463,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.5,
     reviewCount: 234,
     features: { patio: false, wifi: true, parking: false, veganOptions: true, pastrySelection: true },
-    instagram: '@neatcoffee',
   },
   {
     id: 'east-town-cafe',
@@ -564,7 +543,6 @@ export const coffeeShops: CoffeeShop[] = [
     rating: 4.5,
     reviewCount: 145,
     features: { patio: true, wifi: true, parking: true, veganOptions: true, pastrySelection: true },
-    instagram: '@nodincoffee',
   },
 ];
 

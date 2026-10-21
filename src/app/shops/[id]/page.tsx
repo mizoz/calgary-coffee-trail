@@ -113,7 +113,7 @@ export default function ShopDetailPage() {
                     </span>
                   </div>
                   <span className="text-coffee-500 dark:text-coffee-400">
-                    ({shop.reviewCount} reviews)
+                    ({shop.reviewCount} reviews · sample data)
                   </span>
                 </div>
 
